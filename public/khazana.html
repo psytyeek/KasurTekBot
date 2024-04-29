@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Pw Khazana</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="main-section">
+            <section class="section-header">
+                <div class="batch-name">
+                    <span>Pw Khazana</span>
+                    <div class="admin_pannel">
+                        <a href="/"><img height="30px" src="./assets/images/logo.png" alt=""></a>
+
+                    </div>
+                </div>
+            </section>
+            <marquee style="margin-top: 5px;" behavior="" direction="left"><b>Education is the investment that pays
+                    dividends for a lifetime, yet we are granted only a limited time to absorb its priceless wisdom.
+                </b></marquee>
+            <section class="input">
+                <div class="json_input">
+                    <input required placeholder="Entre Video Json" type="text" id="Video_input">
+                    <input required placeholder="Entre Notes Json" type="text" id="Note_input">
+                    <input required placeholder="Entre Dpp Json" type="text" id="Dpp_input">
+                </div>
+
+                <div class="tools">
+                    <span>Resolution: </span>
+                    <select id="resolution">
+                        <option value="720">720p</option>
+                        <option selected value="480">480p</option>
+                        <option value="360">360p</option>
+                        <option value="240">240p</option>
+                    </select>
+                </div>
+
+                <div class="btn-div">
+                    <button id="ShowChapter" type="submit" class="button-24" id="btn">ShowChapter</button>
+                </div>
+
+            </section>
+
+            <section class="show-input">
+                <div class="header">
+                    <span id="Chapter_Name">Chapter Name</span>
+                </div>
+                <hr>
+                <div class="output">
+                    <div class="chaper-image">
+                        <img id="chaper-img" src="./assets/images/upper_khazana.png" alt="">
+                        <div class="text-chapter">
+                            <div class="chapter-txt">
+                                <span id="Chapter_Name2"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chaptr-text">
+                        <div class="information">
+                            <div class="info">
+                                <label for="">Total Lectures: </label>
+                                <span id="total_lec"></span>
+                            </div>
+                            <div class="info">
+                                <label for="">Total Notes: </label>
+                                <span id="total_notes"></span>
+                            </div>
+                            <div class="info">
+                                <label for="">Total Dpps: </label>
+                                <span id="total_dpps"></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="download-btn">
+
+                        <button role="button" class="glow-on-hover" id="Download_Pc">
+                            <a style="padding: 10px;" id="DownloadPcLink" role="button"><i class="fa fa-download"
+                                    aria-hidden="true"></i> Script Pc</a></button>
+                    </div>
+                </div>
+                </div>
+                <div style="display: none;" id="output"></div>
+                <div style="display: none;" id="output2"></div>
+            </section>
+        </section>
+    </main>
+</body>
+<script src="./assets/js/khazana.js"></script>
+
+</html>
