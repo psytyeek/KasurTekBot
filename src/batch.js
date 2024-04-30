@@ -86,11 +86,11 @@ batches.post('/data', async (req, res) => {
         const currentTime = Date.now();
         const timeElapsed = currentTime - lastSentTime;
 
-        if (timeElapsed < 10 * 60 * 1000) {
-            const remainingTime = Math.ceil((10 * 60 * 1000 - timeElapsed) / 60000);
-            bot.sendMessage(chatId, `<b>Hello 👋 ${chatMember.user.first_name},\n\nPlease Wait 10 Minutes To Get Another Script\n\nPlease Wait : </b><code>${remainingTime}</code> Minutes Remaining`, { parse_mode: 'HTML' });
-            return res.status(429).send(`You can send the next file in ${remainingTime} minutes.`);
-        }
+        // if (timeElapsed < 10 * 60 * 1000) {
+        //     const remainingTime = Math.ceil((10 * 60 * 1000 - timeElapsed) / 60000);
+        //     bot.sendMessage(chatId, `<b>Hello 👋 ${chatMember.user.first_name},\n\nPlease Wait 10 Minutes To Get Another Script\n\nPlease Wait : </b><code>${remainingTime}</code> Minutes Remaining`, { parse_mode: 'HTML' });
+        //     return res.status(429).send(`You can send the next file in ${remainingTime} minutes.`);
+        // }
 
 
         // Write file asynchronously
